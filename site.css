@@ -30,7 +30,8 @@ select
 }
 
 
-blockquote {
+blockquote 
+{
   width: 50%;
   background:#333;
   color:grey;
