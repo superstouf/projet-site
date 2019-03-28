@@ -1,0 +1,39 @@
+
+body
+{
+	background-color: grey;
+	text-align: center;
+	padding: 225px;
+	 	margin-left: -250px;
+	 	margin-right: -250px;
+}
+
+blockquote
+{
+	background: darkgrey;	
+	color:#fff;
+ 	padding:10px;
+ 	margin:8px 0;   		 /* écart quote et bloc */
+ 	font-size: 20px;
+ 	line-height: 0px;
+
+
+}
+
+body > p 
+{
+  display:inline-block;
+  text-align:left;
+  width:100px;
+  padding:10px;
+  background:#eee	;
+  margin: 12px;					/* écart entre blocs */
+  border-radius: 2px;
+
+}
+
+blockquote ~ p 				/* blocs en-dessous quote?  */		
+{
+  vertical-align:top;
+}
+

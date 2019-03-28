@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title> JEU </title>
+	<link rel="stylesheet" type="text/css" href="site.css"> 
+	<link rel="shortcut icon" href="zifavicon.ico" type="image/x-icon" />
+
+
+	<script type="text/javascript">
+		var nb_mystere = 1 + Math.floor(Math.random() * 30 ) ;
+
+		function test_nb_mystere() 
+		{
+			var parentnode = document.getElementById('proposition');
+			var nb = parentnode.value;
+			nb = parseInt(nb);
+			var addednode = document.createElement("p");
+		
+			if(nb < nb_mystere)
+				addednode.innerHTML=" c'est plus";
+			else if(nb > nb_mystere)
+				addednode.innerHTML=" c'est moins";
+			else if(nb == nb_mystere)
+				addednode.innerHTML=" Bravo! ";
+
+			window.document.body.appendChild(addednode);	
+		}
+
+	</script>
+
+
+</head>
+
+			<STYLE>A {text-decoration: none;} </STYLE>         <!-- enlever soulignement lien hypertexte --> 
+
+<body background="bg.jpg">
+
+		<div id="cadre3">
+		<div id="cadre2">
+		<div id="cadre">
+
+
+		<table> 
+			<tr>
+				<td> <a href="site.html"> <strong> Home </strong> </a>  </td> 
+				<td>  <a href="galerie.html"> <strong> Galerie </strong> </a> </td> 
+				<td> <div id="cellule"> <a href="jeu.html"> <strong> Jeu </strong> </a> </td>
+				<td>  <a href="contact.html"> <strong> Contact </strong> </a> </td>
+				<td> <strong> SITE DE NICOLAS STEPHEN </strong> </td>
+			</tr>	
+		</table>
+
+			<br><br>
+
+		
+
+
+			<br><br>
+
+			<center>	
+
+				<img src="https://media.giphy.com/media/11eCsAJh9HzeY8/giphy.gif"> 
+
+
+				<p> Essayer de trouver le bon chiffre et c'est gagné!
+					(un chiffre entre 1 et 30 quand même) <br>
+					Le résultat s'affiche en bas à gauche de la fenêtre (problème de code)  </p> 
+
+
+				<form>
+				<input type="text" id="proposition" name="proposition" />
+				<input type="button" value="Valider" onclick="test_nb_mystere();"   />
+				</form>
+
+			
+				<br> 
+
+				<a href="jeu.html" class="myButtoon">recommencer</a>
+
+				<br> <br>
+
+				<a href="site.html" class="myButton">home</a>
+
+
+				<br><br>
+
+			</center>
+
+</body>
+</html>
